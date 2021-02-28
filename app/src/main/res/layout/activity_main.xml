@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="236dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Registo De Empleados"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+
+            android:text="Ingresa los datos del empleado"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nombre del empleado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/txt_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Apellido del empleado" />
+
+        <EditText
+            android:id="@+id/txt_cargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Horas "
+            android:inputType="textPersonName"
+            android:text="Cargo del empleado" />
+
+        <EditText
+            android:id="@+id/txt_horas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Horas trabajadas"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_ingresar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ingresar"
+                android:layout_margin="10dp"
+                android:enabled="true"/>
+
+            <Button
+                android:id="@+id/btn_calcular"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
